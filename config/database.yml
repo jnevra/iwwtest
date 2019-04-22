@@ -48,7 +48,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
   database: blankb_production
-  username: fwork
-  password: <%= ENV['FWORK_DATABASE_PASSWORD'] %>
